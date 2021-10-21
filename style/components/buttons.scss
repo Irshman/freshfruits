@@ -1,0 +1,35 @@
+.btn {
+    font-family: $main-font-family;
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 55px;
+    font-weight: 500;
+    color: $white;
+    border: 1px solid $primery-color;
+    background-color: $primery-color;
+    box-shadow: 0px 10px 20px rgba(22, 52, 7, 0.1);
+    border-radius: 20px 80px;
+    padding: 5px 44px;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 10px 20px rgba(22, 52, 7, 0.4);
+    }
+
+    &--ghost {
+        background-color: $white;
+        color: $primery-color;
+        border: 1px solid rgba(89, 190, 41, 0.3);
+    }
+
+    &--normal {
+        height: 59px;
+        padding: 5px 30px;
+        border-radius: 10px;
+    }
+}
+

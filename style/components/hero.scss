@@ -1,0 +1,89 @@
+.hero {
+    padding: 86px 0 0 60px;
+
+    &__wrap {
+        display: flex;
+    }
+
+    &__info {
+        width: 50%;
+        padding-right: 35px;
+        min-width: 530px;
+    }
+
+    &__label {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 1.5;
+        letter-spacing: 1.1;
+        text-transform: uppercase;
+        color: $title-color;
+    }
+
+    &__title {
+        font: $h1-font;
+        color: $primery-color;
+        margin-bottom: 35px;
+    }
+
+    &__img {
+        width: 50%;
+        position: relative;
+    }
+
+    &__descr {
+        margin-bottom: 25px;
+    }
+
+    &__btns {
+        display: flex;
+    }
+
+    
+    &__btn {
+        &:not(:last-child){
+            margin-right: 27px;
+        }
+    }
+
+    &__img-wrap {
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        right: -22%;
+        transform: translateY(-50%);
+        width: 150%;
+    }
+
+    &__img-bg {
+        width: 100%;
+    }
+
+    &__decor-1,
+    &__decor-2,
+    &__decor-3 {
+        position: absolute;
+    }
+
+    &__decor-1 {
+        top: 15%;
+        left: 15%;
+        max-width: 175px;
+        max-height: 109px;
+    }
+
+    &__decor-2 {
+        top: 15%;
+        right: 17%;
+        max-width: 119px;
+        max-height: 83px;
+    }
+
+    &__decor-3 {
+        top: 50%;
+        left: 22%;
+        max-width: 107px;
+        max-height: 56px;
+    }
+
+}

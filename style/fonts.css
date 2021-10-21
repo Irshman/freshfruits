@@ -1,0 +1,25 @@
+
+
+@font-face {
+    font-family: 'Baloo Chettan 2';
+    src: url('../fonts/BalooChettan2-Medium.woff2') format('woff2');
+    src: url('../fonts/BalooChettan2-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Baloo Chettan 2';
+    src: url('../fonts/BalooChettan2-Regular.woff2') format('woff2');
+    src: url('../fonts/BalooChettan2-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Baloo Chettan 2';
+    src: url('../fonts/BalooChettan2-SemiBold.woff2') format('woff2');
+    src: url('../fonts/BalooChettan2-SemiBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
