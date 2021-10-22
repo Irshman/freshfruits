@@ -1,25 +1,30 @@
 .footer {
     padding-top: 50px;
-    position: relative;
-
-    &::before {
-        content: "";
-        width: 1146px;
-        height: 1px;
-        left: 226px;
-        position: absolute;
-        background: rgb(89,190,41);
-        background: linear-gradient(90deg, rgba(89,190,41,0) 0%, rgba(89,190,41,0.3) 30%, rgba(89,190,41,0.4) 50%, rgba(89,190,41,0.3) 70%, rgba(89,190,41,0) 100%);
-    }
+    margin: 0 20px;
 
     &__wrap {
         display: flex;
         padding: 86px 0 104px;
+        justify-content: center;
+        position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: linear-gradient(90deg, rgba(89,190,41,0) 0%, rgba(89,190,41,0.3) 30%, rgba(89,190,41,0.4) 50%, rgba(89,190,41,0.3) 70%, rgba(89,190,41,0) 100%);
     }
+
+    }
+
 
     &__logo {
         line-height: 0;
         padding-bottom: 26px;
+        padding-right: 75px;
 
         img {
             max-width: 164px;
@@ -33,13 +38,81 @@
         font-size: 16px;
         line-height: 1.6;
         color: $black;
+        margin-right: 75px;
     }
 
     &__col {
         
         &--nav {
             display: flex; 
-            padding: 0 100px 0 150px;           
+            padding: 0 50px 0 75px;  
+        }
+
+        &-title {
+            font: $h4-font;
+            color: $title-color;
+            padding: 15px 50px 20px;
+        }
+
+    }
+
+    &__nav {
+    
+        &-item {
+            padding: 5px 50px;
+
+            a {
+                &:hover {
+                    color: $primery-color;
+                }
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        padding-left: 50px;
+        position: relative;
+
+        &-item {
+            width: 45px;
+            height: 45px;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 20px rgba(22, 52, 7, 0.05);
+            border-radius: 50%;
+            position: relative;
+            transition: $trs;
+
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+            
+            img {
+                 position: absolute;
+                 left: 11px;
+                 top: 12px;
+            }
+
+            &:first-child {
+                img {
+                    left:  15px;
+                }
+            }
+
+            &:hover {
+                box-shadow: 0px 10px 20px rgba(22, 52, 7, 0.2);
+            }
+    
+        }
+
+        &-img {
+            margin: 10px;
+            max-width: 201px;
+            position: absolute;
+            top: -90px;
+            right: -170px;
+            z-index: -1;
+
         }
     }
 }

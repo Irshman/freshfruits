@@ -14,11 +14,10 @@
         align-items: center;
         margin: 0 16px;
         padding-bottom: 45px;
+        overflow: hidden;
+        max-width: 362px;
 
         &__img {
-
-            height: 262px;
-            width: 362px;
 
             &-link {
                 padding-bottom: 73%;
@@ -43,11 +42,18 @@
         }
     }
 
-
     &__title {
         font: $h3-font;
         color: $title-color;
+        transition: $trs;
+
+        &-link{
+            &:hover{
+                color: $primery-color;
+            }
+        }
     }
+    
 
     &__stars {
         padding: 5px 0;
