@@ -16,7 +16,12 @@
         }
     }
 
+    &__burger {
+        display: none;
+    }
+
     &__nav {
+
 
         &-list{
             display: flex;
@@ -53,12 +58,102 @@
                 a {
 
                     color: $title-color;
-
                     &::before {
                         background-color: $primery-color;
                     }
                 }
             }
         }
+    }
+}
+
+@media(max-width: 768px) {
+    .header {
+        
+        &__burger {
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+
+            span {
+                position: absolute;
+                background-color: $primery-color;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                top: 9px;
+                z-index: 2;
+                transition: $trs;
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                background-color: $primery-color;
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                z-index: 2;
+                transition: $trs;
+            }
+
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+        }
+
+
+        &__nav {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            padding: 130px 20px 0;
+            transition: $trs;
+
+            &-list {
+                display: block;
+
+                li {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &-item {
+                font-size: 35px;
+            }
+        }
+
+        &__nav--active {
+            top: 0;
+            z-index: 1;
+        }
+
+        &__logo {
+            max-width: 100%;
+            z-index: 5;
+        }
+    }
+
+    .header__burger--active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header__burger--active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header__burger--active span {
+        transform: scale(0);
     }
 }

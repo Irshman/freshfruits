@@ -60,3 +60,17 @@
         max-width: 258px;
     }
 }
+
+@media(max-width: 768px) {
+    .subscribe {
+        padding: 35px 0 25px;
+
+        &__form {
+            display: block;
+        }
+    }
+
+    .btn {
+        padding-top: 10px;
+    }
+}

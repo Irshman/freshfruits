@@ -61,3 +61,53 @@
             }    
         }
     }
+
+    @media(max-width: 1024px) {
+        .deliver {
+            &__title {
+                font-size: 40px;
+            }
+
+            &__count-item-title {
+                font-size: 22px;
+            }
+        }
+    }
+
+
+    @media(max-width: 768px) {
+        .deliver {
+            padding: 30px 0;
+
+            &__header {
+                width: 100%;
+            }
+
+            &__wrap {
+                display: block;
+                padding-left: 40px;
+            }
+
+            &__title {
+                font-size: 40px;
+            }
+        
+            &__info {
+                margin-bottom: 20px;
+            }
+
+            &__count {
+
+                width: 100%;
+
+                &-item {
+                   padding-left: 100px;
+                }
+
+                &-item::before {
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }    
+    }

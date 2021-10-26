@@ -1,5 +1,5 @@
 .hero {
-    padding: 86px 0 0 60px;
+    padding: 86px 0 60px;
 
     &__wrap {
         display: flex;
@@ -29,6 +29,10 @@
     &__img {
         width: 50%;
         position: relative;
+
+        &-bg {
+            width: 100%;
+        }
     }
 
     &__descr {
@@ -53,10 +57,6 @@
         right: -22%;
         transform: translateY(-50%);
         width: 150%;
-    }
-
-    &__img-bg {
-        width: 100%;
     }
 
     &__decor-1,
@@ -85,4 +85,46 @@
         max-height: 56px;
     }
 
+}
+
+@media(max-width: 1024px) {
+    .conteiner {
+        max-width: 100%;
+    }
+
+    .hero__title {
+        font-size: 94px;
+    }
+
+    .hero__img {
+        width: 50%;
+    }
+
+    .hero {
+
+    &__decor-1,
+    &__decor-2,
+    &__decor-3 {
+        display: none;
+    }
+    }
+     
+}   
+
+@media(max-width: 768px) {
+    .hero {
+        padding: 40px 0 30px;
+
+        &__label {
+            font-size: 22px;
+        }
+
+        &__title {
+            font-size: 80px;
+        }
+
+        &__img {
+            display: none;
+        }
+    }
 }

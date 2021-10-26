@@ -82,7 +82,56 @@
         display: block;
         max-width: 136px;
         border-bottom: 2px solid $primery-color;
-    }
+    }  
+}
 
-   
+
+@media(max-width: 1024px) {
+    .stat {
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__num {
+            font-size: 40px;
+        }
+
+        &__item {
+
+            &::before {
+                
+                font-size: 30px;
+                width: 65px;
+                height: 65px;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 768px) {
+    .stat {
+        padding: 30px 0;
+
+        &__wrap {
+            display: block;
+        }
+
+        &__col {
+            width: 100%;
+        }
+
+        &__item {
+            &::before {
+                margin-left: 25px;
+            }
+        }
+
+        &__title {
+            &::before {
+                display: none;
+            }
+        }
+    }
 }
