@@ -12,7 +12,7 @@
             content: "";
             width: 1px;
             height: 100%;
-            left: 365px;
+            left: 395px;
             position: absolute;
             background: linear-gradient(180deg, rgba(89,190,41,0) 0%, rgba(89,190,41,0.3) 30%, rgba(89,190,41,0.4) 50%, rgba(89,190,41,0.3) 70%, rgba(89,190,41,0) 100%);
         }
@@ -22,7 +22,7 @@
             content: "";
             width: 1px;
             height: 100%;
-            left: 725px;
+            left: 750px;
             position: absolute;
             background: linear-gradient(180deg, rgba(89,190,41,0) 0%, rgba(89,190,41,0.3) 30%, rgba(89,190,41,0.4) 50%, rgba(89,190,41,0.3) 70%, rgba(89,190,41,0) 100%);
         }
@@ -49,8 +49,7 @@
     }
 
     &__card {
-        width: 362px;
-        height: 362px;
+        width: calc(100% / 3);
 
         &-link {
 
@@ -111,7 +110,7 @@
 
         &__card {
             margin: 0 auto;
-           border-bottom: 4px solid rgb(89,190,41);
+           border-bottom: 2px solid rgb(89,190,41);
         }
     }
 }

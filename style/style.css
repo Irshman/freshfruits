@@ -529,7 +529,7 @@ input::placeholder {
   content: "";
   width: 1px;
   height: 100%;
-  left: 365px;
+  left: 395px;
   position: absolute;
   background: linear-gradient(180deg, rgba(89, 190, 41, 0) 0%, rgba(89, 190, 41, 0.3) 30%, rgba(89, 190, 41, 0.4) 50%, rgba(89, 190, 41, 0.3) 70%, rgba(89, 190, 41, 0) 100%);
 }
@@ -538,7 +538,7 @@ input::placeholder {
   content: "";
   width: 1px;
   height: 100%;
-  left: 725px;
+  left: 750px;
   position: absolute;
   background: linear-gradient(180deg, rgba(89, 190, 41, 0) 0%, rgba(89, 190, 41, 0.3) 30%, rgba(89, 190, 41, 0.4) 50%, rgba(89, 190, 41, 0.3) 70%, rgba(89, 190, 41, 0) 100%);
 }
@@ -558,8 +558,7 @@ input::placeholder {
   background: linear-gradient(90deg, rgba(89, 190, 41, 0) 0%, rgba(89, 190, 41, 0.3) 30%, rgba(89, 190, 41, 0.4) 50%, rgba(89, 190, 41, 0.3) 70%, rgba(89, 190, 41, 0) 100%);
 }
 .fruits__card {
-  width: 362px;
-  height: 362px;
+  width: 33.3333333333%;
 }
 .fruits__card-link {
   display: block;
@@ -602,7 +601,7 @@ input::placeholder {
   }
   .fruits__card {
     margin: 0 auto;
-    border-bottom: 4px solid #59be29;
+    border-bottom: 2px solid #59be29;
   }
 }
 .shop {
@@ -630,8 +629,7 @@ input::placeholder {
   box-shadow: 0px 10px 20px rgba(14, 35, 4, 0.05);
 }
 .shop__img {
-  width: 362px;
-  height: 262px;
+  width: 100%;
 }
 .shop__img-link {
   padding-bottom: 73%;
@@ -849,12 +847,17 @@ input::placeholder {
   margin-right: 25px;
 }
 .footer__social-link img {
+  max-width: 22px;
   position: absolute;
-  top: 11px;
-  left: 11px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .footer__social-link:hover {
   box-shadow: 0px 10px 20px rgba(22, 52, 7, 0.2);
+}
+.footer__social-item-link img {
+  left: 16px;
 }
 
 @media (max-width: 1024px) {
