@@ -11,6 +11,7 @@ body {
     margin: 0;
     font: $main-font;
     color: $text-color;
+    overflow-x: hidden;
 }
 ul, ol {
     list-style: none;

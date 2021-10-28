@@ -84,14 +84,6 @@
 
 @media(max-width: 1024px) {
     .shop {
-        &__img {
-            width: 262px;
-            height: 162px;
-
-            &-link {
-                padding-bottom: 73%;
-            }
-        }
         
         &__price {
             font-size: 30px;
@@ -107,17 +99,8 @@
             flex-direction: column;
         }
 
-        &__img {
-            width: 362px;
-            height: 262px;
-
-            &-link {
-                padding-bottom: 62%;
-            }
-        }
-
         &__cards {
-            max-width: 80%;
+            max-width: 100%;
             margin: 15px auto;
         }
     }
