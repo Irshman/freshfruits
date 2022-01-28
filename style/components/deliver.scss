@@ -111,3 +111,16 @@
             }
         }    
     }
+
+
+    @media (max-width: 480px) {
+        .deliver {
+            &__title {
+                font-size: 22px;
+            }
+
+            &__info {
+                font-size: 16px;
+            }
+        }
+    }

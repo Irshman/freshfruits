@@ -154,6 +154,8 @@
 
         &__social {
             flex-direction: column;
+            align-items: center;
+            padding-left: 0;
             
             &-link {
                 margin: 0 10px 15px;
@@ -190,6 +192,14 @@
                 }
             }
 
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        &__col {
+            padding: 0;
         }
     }
 }

@@ -150,6 +150,26 @@ input::placeholder {
 }
 
 @media (max-width: 768px) {
+  .header__btn {
+    position: fixed;
+    top: -100%;
+    transition: all 0.3s;
+  }
+  .header__btn--active {
+    z-index: 2;
+    display: flex;
+    top: 460px;
+    left: 30px;
+  }
+  .header__wrap {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 20px 0px;
+    z-index: 2;
+  }
   .header__burger {
     display: block;
     position: relative;
@@ -233,7 +253,7 @@ input::placeholder {
 .hero__info {
   width: 50%;
   padding-right: 35px;
-  min-width: 530px;
+  max-width: 530px;
 }
 .hero__label {
   font-weight: 500;
@@ -317,10 +337,28 @@ input::placeholder {
     font-size: 22px;
   }
   .hero__title {
-    font-size: 80px;
+    font-size: 70px;
+  }
+  .hero__info {
+    width: 100%;
   }
   .hero__img {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .hero__title {
+    margin: 20px 0;
+    font-size: 38px;
+  }
+  .hero__descr {
+    font-size: 16px;
+  }
+  .hero__btns {
+    flex-direction: column;
+  }
+  .hero__btn {
+    margin: 10px 0;
   }
 }
 .stat {
@@ -430,6 +468,21 @@ input::placeholder {
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .stat__item {
+    margin: 0 auto;
+    width: 85%;
+  }
+  .stat__title {
+    font-size: 20px;
+  }
+  .stat__descr {
+    font-size: 16px;
+  }
+  .stat__box {
+    flex-direction: column;
+  }
+}
 .deliver {
   padding: 60px 0;
 }
@@ -516,6 +569,14 @@ input::placeholder {
     top: 0;
   }
 }
+@media (max-width: 480px) {
+  .deliver__title {
+    font-size: 22px;
+  }
+  .deliver__info {
+    font-size: 16px;
+  }
+}
 .fruits {
   padding: 60px 20px;
   margin: 0 auto;
@@ -576,6 +637,11 @@ input::placeholder {
   object-fit: cover;
 }
 
+@media (max-width: 480px) {
+  .fruits {
+    padding: 20px 10px;
+  }
+}
 .shop {
   padding: 60px 0 70px;
 }
@@ -720,9 +786,23 @@ input::placeholder {
   .subscribe__form {
     display: block;
   }
+  .subscribe__col--info {
+    padding: 30px 15px;
+  }
+  .subscribe__title {
+    font-size: 28px;
+  }
 
   .btn {
     padding-top: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .subscribe__col {
+    width: 100%;
+  }
+  .subscribe__col--img {
+    display: none;
   }
 }
 .footer {
@@ -840,6 +920,8 @@ input::placeholder {
   }
   .footer__social {
     flex-direction: column;
+    align-items: center;
+    padding-left: 0;
   }
   .footer__social-link {
     margin: 0 10px 15px;
@@ -865,6 +947,11 @@ input::placeholder {
   }
   .footer__social-link:not(:last-child) {
     margin-right: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .footer__col {
+    padding: 0;
   }
 }
 

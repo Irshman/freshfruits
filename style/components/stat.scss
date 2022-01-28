@@ -135,3 +135,25 @@
         }
     }
 }
+
+@media(max-width: 480px) {
+    .stat {
+
+        &__item {
+            margin: 0 auto;
+            width: 85%;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__descr {
+            font-size: 16px;
+        }
+
+        &__box {
+            flex-direction: column;
+        }
+    }
+}

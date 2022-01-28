@@ -8,7 +8,8 @@
     &__info {
         width: 50%;
         padding-right: 35px;
-        min-width: 530px;
+        // min-width: 530px;
+        max-width: 530px;
     }
 
     &__label {
@@ -121,11 +122,37 @@
         }
 
         &__title {
-            font-size: 80px;
+            font-size: 70px;
+        }
+
+        &__info {
+            width: 100%;
+            // min-width: none;
         }
 
         &__img {
             display: none;
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .hero {
+        &__title {
+            margin: 20px 0;
+            font-size: 38px;
+        }
+
+        &__descr {
+            font-size: 16px;
+        }
+
+        &__btns {
+            flex-direction: column;
+        }
+
+        &__btn {
+            margin: 10px 0;
         }
     }
 }

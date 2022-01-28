@@ -68,9 +68,33 @@
         &__form {
             display: block;
         }
+
+        &__col {
+
+            &--info {
+                padding: 30px 15px;
+            }
+        }
+
+        &__title {
+            font-size: 28px;
+        }
     }
 
     .btn {
         padding-top: 10px;
+    }
+}
+
+@media(max-width: 480px) {
+    .subscribe {
+        
+        &__col {
+            width: 100%;
+            
+            &--img {
+                display: none;
+            }
+        }
     }
 }

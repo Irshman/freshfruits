@@ -69,7 +69,29 @@
 
 @media(max-width: 768px) {
     .header {
-        
+        &__btn {
+            position: fixed;
+            top: -100%;
+            transition: $trs;
+
+            &--active {
+                z-index: 2;
+                display: flex;
+                // position: fixed;
+                top: 460px;
+                left: 30px;
+            }
+        }
+
+        &__wrap {
+            background-color: $white;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            justify-content: space-between;
+            padding: 20px 20px 0px;
+            z-index: 2;
+        }
         
         &__burger {
             display: block;
